@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71aabf14130440c2ac33902be8701d93, type: 3}
+  m_Name: GameplayCueAsset
+  m_EditorClassIdentifier: 
+  CueMappings:
+  - Tag:
+      TagName: Ability.Fire
+    CueType: VSEngine.GAS.Ext.GameplayCueFollowActorEffect, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    Cue:
+      rid: 3092031239926054915
+    Description: 
+  - Tag:
+      TagName: Cue.Hero.Fire
+    CueType: FireSkillCue, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    Cue:
+      rid: 3092031417975046145
+    Description: 
+  references:
+    version: 2
+    RefIds:
+    - rid: 3092031239926054915
+      type: {class: GameplayCueFollowActorEffect, ns: VSEngine.GAS.Ext, asm: Assembly-CSharp}
+      data:
+        effectResName: 
+    - rid: 3092031417975046145
+      type: {class: FireSkillCue, ns: , asm: Assembly-CSharp}
+      data:
+        effectResName: GASPrefab/Cue/FireSkillCue
+        offset: {x: 0.1, y: 0.72, z: 1.2}
